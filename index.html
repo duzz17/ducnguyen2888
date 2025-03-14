@@ -4,196 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang Web Sản Phẩm</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-
-        /* Thanh điều hướng */
-        .navbar {
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 16px;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .navbar a:hover {
-            color: #3498db;
-        }
-
-        header {
-            background-color: #3498db;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Phần hình ảnh và tên trong header */
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .header-content img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid white;
-        }
-
-        .header-content h1 {
-            margin: 10px 0;
-            font-size: 24px;
-            color: white;
-        }
-
-        .header-content p {
-            font-size: 16px;
-            color: #f0f0f0;
-        }
-
-        .main-content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        /* Mỗi thẻ sản phẩm */
-        .product-card {
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 45%; /* Đảm bảo mỗi hàng chỉ có 2 sản phẩm */
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .product-img {
-            width: 100%;
-            height: 180px; /* Giảm chiều cao của ảnh sản phẩm */
-            object-fit: cover;
-        }
-
-        .product-info {
-            padding: 10px 15px;
-        }
-
-        .product-info h3 {
-            margin: 0;
-            font-size: 18px;
-            color: #333;
-        }
-
-        .product-info p {
-            color: #777;
-            font-size: 14px;
-            margin: 10px 0;
-        }
-
-        .product-info a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #3498db;
-            padding: 8px;
-            border-radius: 5px;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-
-        .product-info a:hover {
-            background-color: #2980b9;
-        }
-
-        @media (max-width: 768px) {
-            .product-card {
-                max-width: 100%; /* Trên thiết bị nhỏ sẽ chỉ hiển thị 1 sản phẩm mỗi hàng */
-            }
-        }
-    </style>
+    <title>Trang Bán Hàng Đồ Nữ Đáng Yêu</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-
-    <!-- Thanh điều hướng -->
-    <div class="navbar">
-        <a href="tel:+84901234567">Số điện thoại: 0901234567</a>
-        <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
-    </div>
-
     <header>
-        <div class="header-content">
-            <!-- Thêm ảnh hình tròn và tên -->
-            <img src="https://via.placeholder.com/100" alt="Ảnh đại diện của tôi">
-            <h1>Nguyễn Văn A</h1>
-            <p>Chào mừng đến với trang web của tôi!</p>
+        <div class="navbar">
+            <div class="logo">Fashion Girl</div>
+            <nav>
+                <ul>
+                    <li><a href="#shoes">Giày Dép</a></li>
+                    <li><a href="#clothes">Quần Áo</a></li>
+                    <li><a href="#accessories">Phụ Kiện</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div class="main-content">
-        <h2>Top Sản Phẩm</h2>
-        <div class="product-container">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img class="product-img" src="https://via.placeholder.com/300x200" alt="Sản phẩm 1">
-                <div class="product-info">
-                    <h3>Sản Phẩm 1</h3>
-                    <p>Đặc điểm nổi bật của sản phẩm này.</p>
-                    <a href="https://example.com/san-pham-1" target="_blank">Xem Chi Tiết</a>
-                </div>
+    <section class="hero">
+        <h1>Chào Mừng Bạn Đến Với Fashion Girl!</h1>
+        <p>Trang web mua sắm dành cho các cô nàng yêu thích sự dễ thương và phong cách!</p>
+    </section>
+<!-- quần áoáo -->
+    <section id="clothes" class="product-category">
+        <h2>Quần Áo</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Áo 1">
+                <h3>Áo Thun Dễ Thương</h3>
+                <p>Áo thun nữ với họa tiết dễ thương và thoải mái.</p>
+                <button>Thêm vào giỏ</button>
             </div>
-            <!-- Product 2 -->
-            <div class="product-card">
-                <img class="product-img" src="https://via.placeholder.com/300x200" alt="Sản phẩm 2">
-                <div class="product-info">
-                    <h3>Sản Phẩm 2</h3>
-                    <p>Giới thiệu ngắn gọn về sản phẩm này.</p>
-                    <a href="https://example.com/san-pham-2" target="_blank">Xem Chi Tiết</a>
-                </div>
-            </div>
-            <!-- Product 3 -->
-            <div class="product-card">
-                <img class="product-img" src="https://via.placeholder.com/300x200" alt="Sản phẩm 3">
-                <div class="product-info">
-                    <h3>Sản Phẩm 3</h3>
-                    <p>Đây là sản phẩm chất lượng.</p>
-                    <a href="https://example.com/san-pham-3" target="_blank">Xem Chi Tiết</a>
-                </div>
-            </div>
-            <!-- Product 4 -->
-            <div class="product-card">
-                <img class="product-img" src="https://via.placeholder.com/300x200" alt="Sản phẩm 4">
-                <div class="product-info">
-                    <h3>Sản Phẩm 4</h3>
-                    <p>Thông tin nhanh về sản phẩm này.</p>
-                    <a href="https://example.com/san-pham-4" target="_blank">Xem Chi Tiết</a>
-                </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Áo 2">
+                <h3>Đầm Hoa</h3>
+                <p>Đầm hoa nhẹ nhàng, thanh lịch cho những buổi tiệc cuối tuần.</p>
+                <button>Thêm vào giỏ</button>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- giày dépdép -->
+    <section id="shoes" class="product-category">
+        <h2>Giày Dép</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Giày 1">
+                <h3>Giày Cao Gót Dễ Thương</h3>
+                <p>Giày cao gót nữ với thiết kế thanh lịch và hiện đại.</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Giày 2">
+                <h3>Giày Sandal</h3>
+                <p>Giày sandal thoáng mát, phù hợp cho mùa hè.</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+    <!-- phụ kiện -->
+    <section id="accessories" class="product-category">
+        <h2>Phụ Kiện</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Phụ kiện 1">
+                <h3>Túi Xách Đẹp</h3>
+                <p>Túi xách nữ với thiết kế tinh tế, dễ dàng phối đồ.</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Phụ kiện 2">
+                <h3>Vòng Cổ Dễ Thương</h3>
+                <p>Vòng cổ nữ tính với thiết kế đơn giản, phù hợp mọi lứa tuổi.</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <p>&copy; 2025 Fashion Girl - Tất cả quyền lợi được bảo lưu</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
